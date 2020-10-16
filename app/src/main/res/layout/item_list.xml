@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="16dp"
+    android:orientation="horizontal"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/stateTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.9"
+        android:padding="8dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_gravity="end" />
+
+    <TextView
+        android:id="@+id/confirmedTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3"
+        android:padding="8dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textAlignment="viewEnd"
+        android:textStyle="bold"
+        android:layout_gravity="end" />
+
+    <TextView
+        android:id="@+id/activeTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3"
+        android:padding="8dp"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_red"
+        android:textAlignment="viewEnd"
+        android:textStyle="bold"
+        android:layout_gravity="end" />
+
+    <TextView
+        android:id="@+id/recoveredTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3"
+        android:padding="8dp"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_green"
+        android:textAlignment="viewEnd"
+        android:textStyle="bold"
+        android:layout_gravity="end" />
+
+    <TextView
+        android:id="@+id/deceasedTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_yellow"
+        android:textAlignment="viewEnd"
+        android:textStyle="bold"
+        android:layout_gravity="end" />
+
+</LinearLayout>
