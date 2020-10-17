@@ -7,9 +7,6 @@ import com.example.covindia.fragments.DiscoverFragment
 import com.example.covindia.fragments.HomeFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
-
-
-
 class MainActivity : AppCompatActivity() {
 
 
@@ -17,14 +14,12 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
         val homeFragment = HomeFragment()
         val discoverFragment = DiscoverFragment()
         val aboutFragment = AboutFragment()
 
         makeCurrentFragment(homeFragment)
-
+        
         btm_navigation_bar.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.ic_home -> makeCurrentFragment(homeFragment)
@@ -36,8 +31,6 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
-
 
     private fun makeCurrentFragment(fragment: Fragment) =
         supportFragmentManager.beginTransaction().apply {
