@@ -1,9 +1,5 @@
 package com.example.covindia
 
-data class Response(
-    val statewise: List<StateWiseItem>
-)
-
 data class StateWiseItem(
     val recovered: String?=null,
     val delta: Delta?=null,
