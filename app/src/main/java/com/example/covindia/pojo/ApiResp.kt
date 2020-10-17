@@ -1,4 +1,8 @@
-package com.example.covindia
+package com.example.covindia.pojo
+
+data class ApiResp(
+    val statewise: List<StateWiseItem>
+)
 
 data class StateWiseItem(
     val recovered: String?=null,

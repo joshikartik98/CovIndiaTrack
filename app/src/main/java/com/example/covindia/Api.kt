@@ -8,11 +8,11 @@ import retrofit2.http.GET
 
 interface Api {
 
-    @GET()
-    fun getMovies() : Call<StateWiseResponse>
+    @GET("/data.json")
+    fun getStates() : Call<StateWiseResponse>
 
     companion object {
-        var BASE_URL = "https://api.covid19india.org/data.json"
+        var BASE_URL = "https://api.covid19india.org"
         fun create() : Api {
             val retrofit = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
